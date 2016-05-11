@@ -1,22 +1,16 @@
-.. image:: https://landscape.io/github/ssokolow/lgogd_uri/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/ssokolow/lgogd_uri/master
-   :alt: Code Health
-.. image:: https://codeclimate.com/github/ssokolow/lgogd_uri/badges/gpa.svg
-   :target: https://codeclimate.com/github/ssokolow/lgogd_uri
+.. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/gpa.svg
+   :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II
    :alt: Code Climate
-.. image:: https://scrutinizer-ci.com/g/ssokolow/lgogd_uri/badges/quality-score.png?b=master
-   :target: https://scrutinizer-ci.com/g/ssokolow/lgogd_uri/?branch=master
-   :alt: Scrutinizer Code Quality
-.. image:: https://www.codacy.com/project/badge/09670e4eac6c4ad1852d0fe5a4f8884e
-   :target: https://www.codacy.com/app/from_github/lgogd_uri
-   :alt: Codacy Badge
+   .. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/coverage.svg
+   :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/coverage
+   :alt: Test Coverage
+   .. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/issue_count.svg
+   :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II
+   :alt: Issue Count
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
    :alt: MIT License
    :target: https://raw.githubusercontent.com/ssokolow/lgogd_uri/master/LICENSE
-.. image:: https://badge.waffle.io/ssokolow/lgogd_uri.png?label=ready&title=Ready
-   :target: https://waffle.io/ssokolow/lgogd_uri
-   :alt: Contributor-friendly TODOs
-   :align: right
+
 
 A simple GTK+ frontend for `LGOGDownloader`_
 to enable support for the convenient ``gogdownloader://`` URIs that
