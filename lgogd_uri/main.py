@@ -31,9 +31,9 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 from __future__ import (absolute_import, division, print_function,
                         with_statement, unicode_literals)
 
-__author__ = "Stephan Sokolow (deitarion/SSokolow)"
+__author__ = "Stephan Sokolow (deitarion/SSokolow) & Amadren"
 __appname__ = "URI handler for lgogdownloader"
-__version__ = "0.1.0.1"
+__version__ = "MK II"
 __license__ = "MIT"
 
 SVC_NAME = "com.ssokolow.lgogd_uri"
