@@ -1,10 +1,10 @@
 .. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/gpa.svg
    :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II
    :alt: Code Climate
-   .. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/coverage.svg
+.. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/coverage.svg
    :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/coverage
    :alt: Test Coverage
-   .. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/issue_count.svg
+.. image:: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II/badges/issue_count.svg
    :target: https://codeclimate.com/github/Amadren/lgogd_uri-mk.II
    :alt: Issue Count
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
