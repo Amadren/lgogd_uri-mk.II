@@ -39,10 +39,10 @@ __license__ = "MIT"
 SVC_NAME = "com.ssokolow.lgogd_uri"
 LGOGD_CFG_PATH = "~/.config/lgogdownloader/config.cfg"
 GOGD_URI_CFG_PATH = "~/.config/lgogd_uri"
-PLAT_WIN = "w"
-PLAT_MAC = "m"
-PLAT_LIN = "l"
-PLAT_DEF = 5  # Default
+PLAT_WIN = 1
+PLAT_MAC = 2
+PLAT_LIN = 4
+PLAT_DEF = 4  # Default
 PLAT_ALL = 7
 SUBDIR_GAME = '%gamename%'
 SUBDIR_EXTRAS = 'extras'
@@ -338,20 +338,20 @@ class Application(dbus.service.Object):  # pylint: disable=C0111,R0902
         cmd = ['lgogdownloader']
         if is_inst:
             self.term.feed("\rRetrieving your shelf. This may take time.\r\n")
-            if is_patch:
-                cmd.extend(['--platform',
-                            str((win * PLAT_WIN) +
-                               (lin * PLAT_LIN) +
-                               (mac * PLAT_MAC)),
-                            '--download', '--no-installers',
-                            '--game', '^%s$' % game_id])
-            else:
-                cmd.extend(['--platform',
-                            str((win * PLAT_WIN) +
-                               (lin * PLAT_LIN) +
-                               (mac * PLAT_MAC)),
-                            '--download',
-                            '--game', '^%s$' % game_id])
+       #     if is_patch:
+        #        cmd.extend(['--platform',
+         #                   str((win * PLAT_WIN) +
+          #                     (lin * PLAT_LIN) +
+           #                    (mac * PLAT_MAC)),
+            #                '--download', '--no-installers',
+             #               '--game', '^%s$' % game_id])
+            #else:
+            cmd.extend(['--platform',
+                 str((win * PLAT_WIN) +
+                 (lin * PLAT_LIN) +
+                 (mac * PLAT_MAC)),
+                 '--download',
+                 '--game',  '^%s$' % game_id, ' --exclude extras'])
         else:
             do_fix = self.builder.get_object("chk_path_fixup").get_active()
             if do_fix and not no_subdirs:
@@ -363,7 +363,7 @@ class Application(dbus.service.Object):  # pylint: disable=C0111,R0902
                     os.makedirs(tgt)
 
             path = "%s/%s" % (game_id, file_id)
-            cmd.extend(['--download-file', path])
+            cmd.extend(['--download-file', path, ' --exclude extras'])
 
         self.term.fork_command(cmd[0], cmd, None, tgt)
 
